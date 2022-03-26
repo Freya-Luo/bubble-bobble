@@ -1,4 +1,0 @@
-player_test 42 0.00557135
-enemy_test 23 0.00383258
-bubble_test 6 0.00103068
----
