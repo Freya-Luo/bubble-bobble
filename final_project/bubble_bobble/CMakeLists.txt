@@ -1,0 +1,2 @@
+add_executable(bubble_bobble MACOSX_BUNDLE main.cpp)
+target_link_libraries(bubble_bobble simplebitmap fssimplewindow)
