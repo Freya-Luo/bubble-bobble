@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{798D7D7F-B814-3D3E-9E0C-CB6300406296}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>2DRetroMapTool</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\gui\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">2DRetroMapTool.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">2DRetroMapTool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\gui\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">2DRetroMapTool.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">2DRetroMapTool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\gui\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">2DRetroMapTool.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">2DRetroMapTool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\gui\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">2DRetroMapTool.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">2DRetroMapTool</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\fslazywindow\src\Debug\fslazywindow.lib;..\..\..\ysgl\src\Debug\ysgl.lib;..\..\..\fsgui3d\src\Debug\fsgui3d.lib;..\..\..\fsguilib\src\gl2\Debug\fsguilib_gl2.lib;..\..\..\fsgui3d\src\gl2\Debug\fsgui3d_gl2.lib;..\..\..\ystexturemanager\src\Debug\ystexturemanager.lib;..\..\..\ystexturemanager\src\gl\Debug\ystexturemanager_gl.lib;..\kernel\Debug\retromap_kernel.lib;..\kernel\gl2\Debug\retromap_kernel_gl2.lib;..\kernelutil\Debug\retromap_kernelutil.lib;..\..\..\fsguilib\filedialog\Debug\fsguifiledialog.lib;..\..\..\ysport\src\Debug\ysport.lib;..\..\..\fsguilib\src\Debug\fsguilib.lib;..\..\..\fsguilib\src\gl2\Debug\fsguilib_gl2.lib;..\..\..\fssimplewindow\src\Debug\fssimplewindow.lib;..\..\..\ysglcpp\src\gl2\Debug\ysglcpp_gl2.lib;..\kernel\Debug\retromap_kernel.lib;..\..\..\ystexturemanager\src\gl\Debug\ystexturemanager_gl.lib;..\..\..\ystexturemanager\src\Debug\ystexturemanager.lib;..\..\..\yssystemfont\src\Debug\yssystemfont.lib;..\..\..\ysbitmaputil\src\Debug\ysbitmaputil.lib;..\..\..\ysglcpp\src\Debug\ysglcpp.lib;..\..\..\ysclass11\src\Debug\ysclass11.lib;..\..\..\ysfontrenderer\src\Debug\ysfontrenderer.lib;..\..\..\ysclass\src\Debug\ysclass.lib;..\..\..\ysbitmap\src\Debug\ysbitmap.lib;..\..\..\ysbitmapfont\src\Debug\ysbitmapfont.lib;..\..\..\ysgl\src\Debug\ysgl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/Debug/2DRetroMapTool.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/Debug/2DRetroMapTool.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\fslazywindow\src\Release\fslazywindow.lib;..\..\..\ysgl\src\Release\ysgl.lib;..\..\..\fsgui3d\src\Release\fsgui3d.lib;..\..\..\fsguilib\src\gl2\Release\fsguilib_gl2.lib;..\..\..\fsgui3d\src\gl2\Release\fsgui3d_gl2.lib;..\..\..\ystexturemanager\src\Release\ystexturemanager.lib;..\..\..\ystexturemanager\src\gl\Release\ystexturemanager_gl.lib;..\kernel\Release\retromap_kernel.lib;..\kernel\gl2\Release\retromap_kernel_gl2.lib;..\kernelutil\Release\retromap_kernelutil.lib;..\..\..\fsguilib\filedialog\Release\fsguifiledialog.lib;..\..\..\ysport\src\Release\ysport.lib;..\..\..\fsguilib\src\Release\fsguilib.lib;..\..\..\fsguilib\src\gl2\Release\fsguilib_gl2.lib;..\..\..\fssimplewindow\src\Release\fssimplewindow.lib;..\..\..\ysglcpp\src\gl2\Release\ysglcpp_gl2.lib;..\kernel\Release\retromap_kernel.lib;..\..\..\ystexturemanager\src\gl\Release\ystexturemanager_gl.lib;..\..\..\ystexturemanager\src\Release\ystexturemanager.lib;..\..\..\yssystemfont\src\Release\yssystemfont.lib;..\..\..\ysbitmaputil\src\Release\ysbitmaputil.lib;..\..\..\ysglcpp\src\Release\ysglcpp.lib;..\..\..\ysclass11\src\Release\ysclass11.lib;..\..\..\ysfontrenderer\src\Release\ysfontrenderer.lib;..\..\..\ysclass\src\Release\ysclass.lib;..\..\..\ysbitmap\src\Release\ysbitmap.lib;..\..\..\ysbitmapfont\src\Release\ysbitmapfont.lib;..\..\..\ysgl\src\Release\ysgl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/Release/2DRetroMapTool.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/Release/2DRetroMapTool.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\fslazywindow\src\MinSizeRel\fslazywindow.lib;..\..\..\ysgl\src\MinSizeRel\ysgl.lib;..\..\..\fsgui3d\src\MinSizeRel\fsgui3d.lib;..\..\..\fsguilib\src\gl2\MinSizeRel\fsguilib_gl2.lib;..\..\..\fsgui3d\src\gl2\MinSizeRel\fsgui3d_gl2.lib;..\..\..\ystexturemanager\src\MinSizeRel\ystexturemanager.lib;..\..\..\ystexturemanager\src\gl\MinSizeRel\ystexturemanager_gl.lib;..\kernel\MinSizeRel\retromap_kernel.lib;..\kernel\gl2\MinSizeRel\retromap_kernel_gl2.lib;..\kernelutil\MinSizeRel\retromap_kernelutil.lib;..\..\..\fsguilib\filedialog\MinSizeRel\fsguifiledialog.lib;..\..\..\ysport\src\MinSizeRel\ysport.lib;..\..\..\fsguilib\src\MinSizeRel\fsguilib.lib;..\..\..\fsguilib\src\gl2\MinSizeRel\fsguilib_gl2.lib;..\..\..\fssimplewindow\src\MinSizeRel\fssimplewindow.lib;..\..\..\ysglcpp\src\gl2\MinSizeRel\ysglcpp_gl2.lib;..\kernel\MinSizeRel\retromap_kernel.lib;..\..\..\ystexturemanager\src\gl\MinSizeRel\ystexturemanager_gl.lib;..\..\..\ystexturemanager\src\MinSizeRel\ystexturemanager.lib;..\..\..\yssystemfont\src\MinSizeRel\yssystemfont.lib;..\..\..\ysbitmaputil\src\MinSizeRel\ysbitmaputil.lib;..\..\..\ysglcpp\src\MinSizeRel\ysglcpp.lib;..\..\..\ysclass11\src\MinSizeRel\ysclass11.lib;..\..\..\ysfontrenderer\src\MinSizeRel\ysfontrenderer.lib;..\..\..\ysclass\src\MinSizeRel\ysclass.lib;..\..\..\ysbitmap\src\MinSizeRel\ysbitmap.lib;..\..\..\ysbitmapfont\src\MinSizeRel\ysbitmapfont.lib;..\..\..\ysgl\src\MinSizeRel\ysgl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/MinSizeRel/2DRetroMapTool.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/MinSizeRel/2DRetroMapTool.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fssimplewindow\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\..\..\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmapfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysfontrenderer\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsgui3d\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\gl2\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fsguilib\filedialog\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>..\..\..\fslazywindow\src\RelWithDebInfo\fslazywindow.lib;..\..\..\ysgl\src\RelWithDebInfo\ysgl.lib;..\..\..\fsgui3d\src\RelWithDebInfo\fsgui3d.lib;..\..\..\fsguilib\src\gl2\RelWithDebInfo\fsguilib_gl2.lib;..\..\..\fsgui3d\src\gl2\RelWithDebInfo\fsgui3d_gl2.lib;..\..\..\ystexturemanager\src\RelWithDebInfo\ystexturemanager.lib;..\..\..\ystexturemanager\src\gl\RelWithDebInfo\ystexturemanager_gl.lib;..\kernel\RelWithDebInfo\retromap_kernel.lib;..\kernel\gl2\RelWithDebInfo\retromap_kernel_gl2.lib;..\kernelutil\RelWithDebInfo\retromap_kernelutil.lib;..\..\..\fsguilib\filedialog\RelWithDebInfo\fsguifiledialog.lib;..\..\..\ysport\src\RelWithDebInfo\ysport.lib;..\..\..\fsguilib\src\RelWithDebInfo\fsguilib.lib;..\..\..\fsguilib\src\gl2\RelWithDebInfo\fsguilib_gl2.lib;..\..\..\fssimplewindow\src\RelWithDebInfo\fssimplewindow.lib;..\..\..\ysglcpp\src\gl2\RelWithDebInfo\ysglcpp_gl2.lib;..\kernel\RelWithDebInfo\retromap_kernel.lib;..\..\..\ystexturemanager\src\gl\RelWithDebInfo\ystexturemanager_gl.lib;..\..\..\ystexturemanager\src\RelWithDebInfo\ystexturemanager.lib;..\..\..\yssystemfont\src\RelWithDebInfo\yssystemfont.lib;..\..\..\ysbitmaputil\src\RelWithDebInfo\ysbitmaputil.lib;..\..\..\ysglcpp\src\RelWithDebInfo\ysglcpp.lib;..\..\..\ysclass11\src\RelWithDebInfo\ysclass11.lib;..\..\..\ysfontrenderer\src\RelWithDebInfo\ysfontrenderer.lib;..\..\..\ysclass\src\RelWithDebInfo\ysclass.lib;..\..\..\ysbitmap\src\RelWithDebInfo\ysbitmap.lib;..\..\..\ysbitmapfont\src\RelWithDebInfo\ysbitmapfont.lib;..\..\..\ysgl\src\RelWithDebInfo\ysgl.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/RelWithDebInfo/2DRetroMapTool.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/RelWithDebInfo/2DRetroMapTool.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/67399/24783/HaveAGoodDay/final_project/public/src/2DRetroMapTool/src/gui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/67399/24783/HaveAGoodDay/final_project -BC:/Users/67399/24783/HaveAGoodDay/build --check-stamp-file C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\gui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/67399/24783/HaveAGoodDay/final_project/public/src/2DRetroMapTool/src/gui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/67399/24783/HaveAGoodDay/final_project -BC:/Users/67399/24783/HaveAGoodDay/build --check-stamp-file C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\gui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/67399/24783/HaveAGoodDay/final_project/public/src/2DRetroMapTool/src/gui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/67399/24783/HaveAGoodDay/final_project -BC:/Users/67399/24783/HaveAGoodDay/build --check-stamp-file C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\gui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/67399/24783/HaveAGoodDay/final_project/public/src/2DRetroMapTool/src/gui/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/67399/24783/HaveAGoodDay/final_project -BC:/Users/67399/24783/HaveAGoodDay/build --check-stamp-file C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/gui/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\gui\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\fsgui3dapp.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\fsgui3dmain.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\singleton.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\config\retromap_config.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\filemenu\filemenu.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\menusetup.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\render.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\textresource.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\editmenu\editmenu.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\selectmenu\selectmenu.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\filename.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\configmenu\configmenu.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\fieldmenu\fieldmenu.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\worldmenu\worldmenu.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\markupmenu\markupmenu.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\mappiecemenu\mappiecemenu.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\viewmenu\viewmenu.cpp" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\fsgui3dapp.h" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\config\retromap_config.h" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\textresource.h" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\gui\filename.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\ZERO_CHECK.vcxproj">
+      <Project>{ECDF4E88-CDA5-3D4B-A1DA-FEBAA22E0795}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\fsgui3d\src\fsgui3d.vcxproj">
+      <Project>{8E0F1604-884F-3E7F-BA5A-49F62F1D1FF1}</Project>
+      <Name>fsgui3d</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\fsgui3d\src\gl2\fsgui3d_gl2.vcxproj">
+      <Project>{813AF9CC-DD83-30ED-915E-10F5F2372B4F}</Project>
+      <Name>fsgui3d_gl2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\fsguilib\filedialog\fsguifiledialog.vcxproj">
+      <Project>{C2C751DD-A5CD-374A-9DF4-443B0A0911FA}</Project>
+      <Name>fsguifiledialog</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\fsguilib\src\fsguilib.vcxproj">
+      <Project>{B6F5213B-49AC-3762-AAC0-6F6E8B594522}</Project>
+      <Name>fsguilib</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\fsguilib\src\gl2\fsguilib_gl2.vcxproj">
+      <Project>{305117CC-F050-3B03-81B7-BA1C5FB733CB}</Project>
+      <Name>fsguilib_gl2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\fslazywindow\src\fslazywindow.vcxproj">
+      <Project>{CC436DA4-5DEA-3FBE-96D2-A42CEA83DE49}</Project>
+      <Name>fslazywindow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\fssimplewindow\src\fssimplewindow.vcxproj">
+      <Project>{ACA57298-0B5E-36EA-B8E6-24195C016AD9}</Project>
+      <Name>fssimplewindow</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernel\retromap_kernel.vcxproj">
+      <Project>{A48AD7D8-1C61-3757-98F5-50319F44434B}</Project>
+      <Name>retromap_kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernel\gl2\retromap_kernel_gl2.vcxproj">
+      <Project>{626F9B64-A306-3038-B613-EDF217FD1629}</Project>
+      <Name>retromap_kernel_gl2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\retromap_kernelutil.vcxproj">
+      <Project>{B0E3806F-2357-33A0-8365-E840CB710ADC}</Project>
+      <Name>retromap_kernelutil</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysbitmap\src\ysbitmap.vcxproj">
+      <Project>{148BCD9B-5EED-3856-B25B-63964A651B9F}</Project>
+      <Name>ysbitmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysbitmapfont\src\ysbitmapfont.vcxproj">
+      <Project>{39538443-BBA5-3D9F-B6F5-14EA246C5191}</Project>
+      <Name>ysbitmapfont</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysbitmaputil\src\ysbitmaputil.vcxproj">
+      <Project>{6D40AD86-3A2E-3F3F-A082-8B1BBA1F22AC}</Project>
+      <Name>ysbitmaputil</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysclass\src\ysclass.vcxproj">
+      <Project>{6904B718-839B-307D-9D80-D441812B2F33}</Project>
+      <Name>ysclass</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysclass11\src\ysclass11.vcxproj">
+      <Project>{35DA58BD-B65A-3983-86DE-B042367F65D1}</Project>
+      <Name>ysclass11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysfontrenderer\src\ysfontrenderer.vcxproj">
+      <Project>{FDDD22FE-2EE8-3C52-8311-65B59731F82A}</Project>
+      <Name>ysfontrenderer</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysgl\src\ysgl.vcxproj">
+      <Project>{4668602C-C386-3DDD-8F79-739BB476A732}</Project>
+      <Name>ysgl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysglcpp\src\ysglcpp.vcxproj">
+      <Project>{E5D7B3DA-B3D4-3EAE-8F77-B4B4C30503C0}</Project>
+      <Name>ysglcpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysglcpp\src\gl2\ysglcpp_gl2.vcxproj">
+      <Project>{C946A855-C057-3CFC-93FD-7D0D11B11845}</Project>
+      <Name>ysglcpp_gl2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysport\src\ysport.vcxproj">
+      <Project>{BE4F000C-7189-3562-BB67-9484D6E0E70B}</Project>
+      <Name>ysport</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\yssystemfont\src\yssystemfont.vcxproj">
+      <Project>{0C810748-6FD0-3755-942F-2F7986859AF4}</Project>
+      <Name>yssystemfont</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ystexturemanager\src\ystexturemanager.vcxproj">
+      <Project>{7E2DFE61-F52F-381B-BF51-FA6DBAC89E3C}</Project>
+      <Name>ystexturemanager</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ystexturemanager\src\gl\ystexturemanager_gl.vcxproj">
+      <Project>{D580C10C-9A98-300C-992B-3112CA9E84C1}</Project>
+      <Name>ystexturemanager_gl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

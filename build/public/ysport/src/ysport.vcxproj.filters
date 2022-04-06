@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\windows\ysopenurl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\windows\yswin32encoding.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\windows\yswin32fileinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\windows\yswin32fileio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\windows\yswin32locale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\windows\yswin32runprocess.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\windows\yswin32specialpath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\windows\yswin32subsectimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysfileinfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysfileio.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\yslocale.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysspecialpath.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\yssubsectimer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysthread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysencoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysfileinfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysfileio.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\yslocale.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysopenurl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysport.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysrunprocess.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysspecialpath.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\yssubsectimer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysthread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\ysplatformident.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{D40D1DEC-F626-39A4-B02C-7591044152B3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6A7D6CFB-BAF6-3856-8DA0-AD892E757AD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

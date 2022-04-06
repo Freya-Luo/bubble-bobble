@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B0E3806F-2357-33A0-8365-E840CB710ADC}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>retromap_kernelutil</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">retromap_kernelutil.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">retromap_kernelutil</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">retromap_kernelutil.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">retromap_kernelutil</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">retromap_kernelutil.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">retromap_kernelutil</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">retromap_kernelutil.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">retromap_kernelutil</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernel;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmaputil\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysbitmap\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\src\imported\include;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ystexturemanager\src\gl\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\yssystemfont\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysglcpp\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysclass11\src\.;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src;C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysport\src\.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/67399/24783/HaveAGoodDay/final_project/public/src/2DRetroMapTool/src/kernelutil/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/67399/24783/HaveAGoodDay/final_project -BC:/Users/67399/24783/HaveAGoodDay/build --check-stamp-file C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/kernelutil/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/67399/24783/HaveAGoodDay/final_project/public/src/2DRetroMapTool/src/kernelutil/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/67399/24783/HaveAGoodDay/final_project -BC:/Users/67399/24783/HaveAGoodDay/build --check-stamp-file C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/kernelutil/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/67399/24783/HaveAGoodDay/final_project/public/src/2DRetroMapTool/src/kernelutil/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/67399/24783/HaveAGoodDay/final_project -BC:/Users/67399/24783/HaveAGoodDay/build --check-stamp-file C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/kernelutil/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/67399/24783/HaveAGoodDay/final_project/public/src/2DRetroMapTool/src/kernelutil/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/67399/24783/HaveAGoodDay/final_project -BC:/Users/67399/24783/HaveAGoodDay/build --check-stamp-file C:/Users/67399/24783/HaveAGoodDay/build/public/2DRetroMapTool/src/kernelutil/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernelutil\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil\retromap_screenshotcache.cpp" />
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil\retromap_pngexport.cpp" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil\retromap_screenshotcache.h" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\2DRetroMapTool\src\kernelutil\retromap_pngexport.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\ZERO_CHECK.vcxproj">
+      <Project>{ECDF4E88-CDA5-3D4B-A1DA-FEBAA22E0795}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\2DRetroMapTool\src\kernel\retromap_kernel.vcxproj">
+      <Project>{A48AD7D8-1C61-3757-98F5-50319F44434B}</Project>
+      <Name>retromap_kernel</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysbitmap\src\ysbitmap.vcxproj">
+      <Project>{148BCD9B-5EED-3856-B25B-63964A651B9F}</Project>
+      <Name>ysbitmap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysbitmaputil\src\ysbitmaputil.vcxproj">
+      <Project>{6D40AD86-3A2E-3F3F-A082-8B1BBA1F22AC}</Project>
+      <Name>ysbitmaputil</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysclass\src\ysclass.vcxproj">
+      <Project>{6904B718-839B-307D-9D80-D441812B2F33}</Project>
+      <Name>ysclass</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysclass11\src\ysclass11.vcxproj">
+      <Project>{35DA58BD-B65A-3983-86DE-B042367F65D1}</Project>
+      <Name>ysclass11</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysgl\src\ysgl.vcxproj">
+      <Project>{4668602C-C386-3DDD-8F79-739BB476A732}</Project>
+      <Name>ysgl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysglcpp\src\ysglcpp.vcxproj">
+      <Project>{E5D7B3DA-B3D4-3EAE-8F77-B4B4C30503C0}</Project>
+      <Name>ysglcpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysport\src\ysport.vcxproj">
+      <Project>{BE4F000C-7189-3562-BB67-9484D6E0E70B}</Project>
+      <Name>ysport</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\yssystemfont\src\yssystemfont.vcxproj">
+      <Project>{0C810748-6FD0-3755-942F-2F7986859AF4}</Project>
+      <Name>yssystemfont</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ystexturemanager\src\ystexturemanager.vcxproj">
+      <Project>{7E2DFE61-F52F-381B-BF51-FA6DBAC89E3C}</Project>
+      <Name>ystexturemanager</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ystexturemanager\src\gl\ystexturemanager_gl.vcxproj">
+      <Project>{D580C10C-9A98-300C-992B-3112CA9E84C1}</Project>
+      <Name>ystexturemanager_gl</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

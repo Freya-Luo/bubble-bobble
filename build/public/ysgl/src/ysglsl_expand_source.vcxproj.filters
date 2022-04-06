@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\bmpRendererFragmentShaderSrc.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\bmpRendererVertexShaderSrc.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\flash3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\flash3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\flashByPointSprite3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\flashByPointSprite3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\plain2DDrawingFragmentShaderSrc.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\plain2DDrawingVertexShaderSrc.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColor3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColor3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorBillBoard3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorBillBoard3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorMarker3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorMarker3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorMarkerByPointSprite3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorMarkerByPointSprite3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorPerPixShading3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorPerPixShading3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorPerVtxShading3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorPerVtxShading3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorPointSprite3DDrawingFragmentShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\380833117c44c3afa7d692323d28259f\variColorPointSprite3DDrawingVertexShader.glsl.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\build\CMakeFiles\accc8f06dbfec9bbd396ba52b964f9a3\ysglsl_expand_source.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\ysgl\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\67399\24783\HaveAGoodDay\build\public\ysgl\src\CMakeFiles\ysglsl_expand_source" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6D453962-1057-3685-B604-E24B15194445}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

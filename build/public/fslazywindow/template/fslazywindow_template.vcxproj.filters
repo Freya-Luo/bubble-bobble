@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\template\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\67399\24783\HaveAGoodDay\final_project\public\src\fslazywindow\template\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{6A7D6CFB-BAF6-3856-8DA0-AD892E757AD0}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
