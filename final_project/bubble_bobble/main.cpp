@@ -46,11 +46,44 @@ class Enemy{
 		SimpleBitmap fruit;
 		int dir = 0; //0 is right, 1 is left;
 		void moving(SimpleBitmap bmp);
+		int check_room(SimpleBitmap bmp);
 };
 
+int Enemy::check_room(SimpleBitmap bmp){
+	SimpleBitmap loc_l, loc_r, loc_u, loc_d;
+	
+	loc_l = bmp.CutOut(int(x), int(y)+16, 1, 1);;
+	loc_r = bmp.CutOut(int(x)+32, int(y)+16, 1, 1);
 
+	if(!loc_l.operator==(black_pixel)){//left side wall
+		return 1;
+	}else if(!loc_r.operator==(black_pixel)){//right side wall
+		return 2;
+	}else{
+		return 0; //no wall
+	}
+	
+}
 
 void Enemy::moving(SimpleBitmap bmp){
+	int room = check_room(bmp);
+	if(live != 0){
+		if(dir == 0 && room !=2){
+				x += 0.4;
+			}else if(dir == 1 && room != 1){
+				x -= 0.4;
+			}
+			if(room != 0){
+				dir = 1 - dir;
+				if(dir == 1){
+					x -= 0.4;
+				}else{
+					x += 0.4;
+				}
+			}
+
+	}
+	
 	if(j_cnt > 0){
 		jumped = true;
 		y -= 0.8f;
@@ -61,13 +94,11 @@ void Enemy::moving(SimpleBitmap bmp){
 		y += 0.8f;
 		f_cnt -= 1;
 	}
-	if(x > float(bmp.GetWidth()-50)){
-		x = float(bmp.GetWidth()-50);	
+
+	if(y+32 >= 480){
+		y = 0;
 	}
-	if(x < 20){
-		x = float(20);
-	}
-		
+
 	if(y < 20){
 		y = float(20);	
 	}
@@ -116,15 +147,18 @@ int Player::check_room(SimpleBitmap bmp){
 void Player::moving(SimpleBitmap bmp){
 	if(j_cnt > 0){
 		jumped = true;
-		y -= 0.8;
+		y -= 1;
 		j_cnt -= 1;
 	}
 	if(f_cnt > 0 && j_cnt == 0){
 		jumped = false;
-		y += 0.8;
+		y += 1;
 		f_cnt -= 1;
 	}
 
+	if(y+32 >= 480){
+		y = 0;
+	}
 		
 	if(y < float(20)){
 		y = float(20);	
@@ -204,36 +238,63 @@ void need_terminate(){
 	}
 }
 
-void run(){
-	int score = 0;
-
-    temp.LoadPng("../final_project/png/level1.png");
+void assign_monster_loc(int level, std::vector<Bubble> *bubbles, std::vector<Enemy> *enemies){
+	int en_cnt = 3;
+	if(level == 1){
+		for (int i =0; i<en_cnt; i++){
+			Enemy en;
+			en.j_cnt = 0;
+			en.f_cnt = 0;
+			en.dir = rand()%2;
+			en.live = true;
+			en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
+			en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
+			en.fruit.LoadPng("../final_project/png/banana.png");
+			en.x = 300;
+			en.y = i*150 + 100;
+			enemies->push_back(en);
+		}
+	}else if(level == 2){
+		for (int i =0; i<en_cnt; i++){
+			Enemy en;
+			en.j_cnt = 0;
+			en.f_cnt = 0;
+			en.dir = rand()%2;
+			en.live = true;
+			en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
+			en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
+			en.fruit.LoadPng("../final_project/png/banana.png");
+			en.x = 400;
+			en.y = i*150 + 100;
+			enemies->push_back(en);
+		}
+	}else{
+		for (int i =0; i<en_cnt; i++){
+			Enemy en;
+			en.j_cnt = 0;
+			en.f_cnt = 0;
+			en.dir = rand()%2;
+			en.live = true;
+			en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
+			en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
+			en.fruit.LoadPng("../final_project/png/banana.png");
+			en.x = 200;
+			en.y = i*150 + 100;
+			enemies->push_back(en);
+		}
+	}
 	
-	black_pixel = temp.CutOut(100, 100, 1, 1);
-
-    SimpleBitmap bmp;
-    bmp.LoadPng("../final_project/png/level3.png");
-	FsOpenWindow(0,0,bmp.GetWidth(),bmp.GetHeight(),1);
+}
 	
 
+int run_single_level(int level, int score, SimpleBitmap bmp){
 	Player player;
 	
 	std::vector<Bubble> bubbles;
 	std::vector<Enemy> enemies;
 	bubble_bmp.LoadPng("../final_project/png/Bubble_ammo.png");
-	int en_cnt = 3;
-	for (int i =0; i<en_cnt; i++){
-		Enemy en;
-		en.j_cnt = 0;
-		en.f_cnt = 0;
-		en.live = true;
-		en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
-		en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
-		en.fruit.LoadPng("../final_project/png/banana.png");
-		en.x = 300;
-		en.y = i*150 + 100;
-		enemies.push_back(en);
-	}
+
+	assign_monster_loc(level, &bubbles, &enemies);
 
 	player.x = born_x;
 	player.y = born_y;
@@ -247,12 +308,12 @@ void run(){
 
 		FsPollDevice();
 		auto key=FsInkey();
-
-		if(FSKEY_ESC==key)
-		{
-			break;
-		}
 		
+		if(FSKEY_ESC==key){
+			exit(0);
+		}
+
+
 		if(FSKEY_LEFT==key){
 			if(player.check_room(bmp) != 1){
 				player.x -= 10;
@@ -268,8 +329,8 @@ void run(){
 		if(FSKEY_UP==key)
 		{
 			if(player.j_cnt == 0 && player.f_cnt == 0 && (!player.falling)){
-				player.j_cnt = 160;
-				player.f_cnt = 160;
+				player.j_cnt = 120;
+				player.f_cnt = 120;
 			}
 		}
 		
@@ -296,7 +357,6 @@ void run(){
 				player.x = born_x;
 				player.y = born_y;
 				player.j_cnt = 0;
-				player.f_cnt = 0;
 				life -= 1;
 				std::cout << "Attacked by enemy! Reborn! Life remaining: " << life << std::endl;
 			}else{
@@ -305,6 +365,9 @@ void run(){
 			}
 		}
 
+		if(enemies.size() == 0){
+			return score;
+		}
 
 		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 		glRasterPos2i(0, 0);
@@ -350,9 +413,33 @@ void run(){
 }
 
 
+void run(){
+	
+	temp.LoadPng("../final_project/png/level1.png");
+	black_pixel = temp.CutOut(100, 100, 1, 1);
+
+    SimpleBitmap bmp;
+	int level;
+
+	
+	FsOpenWindow(0,0,640,480,1);
+
+	int score = 0;
+	
+    bmp.LoadPng("../final_project/png/level1.png");
+    score = run_single_level(1, score, bmp);
+    bmp.LoadPng("../final_project/png/level2.png");
+	score = run_single_level(2, score, bmp);
+	bmp.LoadPng("../final_project/png/level3.png");
+	score = run_single_level(3, score, bmp);
+
+	
+}
+
+
 
 int main(int argc,char *argv[]){
-	std::cout << "Press left and right to move, up to jump" << std::endl;
-    run();
+	std::cout << "Press LEFT and RIGHT to move, UP to jump, and SPACE to attack" << std::endl;
+	run();
     return 0;
 }
