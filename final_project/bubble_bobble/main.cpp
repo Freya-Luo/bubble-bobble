@@ -2,181 +2,16 @@
 #include "simplebitmap.h"
 #include "fssimplewindow.h"
 #include <vector>
+#include "bubble.h"
+#include "enemy.h"
+#include "player.h"
 
-SimpleBitmap temp;
-SimpleBitmap black_pixel;
 SimpleBitmap bubble_bmp;
+
 float born_x = 100;
 float born_y = 400;
 
 int life = 3;
-
-class Bubble{
-	public:
-		float x, y;
-		int dir;//0 is right, 1 is left;
-		int dash_cnt = 75;
-		void moving();
-};
-
-void Bubble::moving(){
-	if(dash_cnt >= 0){
-		if(dir == 0){
-			x += 1;
-		}else{
-			x -= 1;
-		}
-		dash_cnt -= 1;
-	}else{
-		y -= 1;
-	}
-}
-
-
-class Enemy{
-	public:
-		float x, y;
-		bool live;
-		bool jumped = false;
-		bool falling = false;
-		int j_cnt, f_cnt;  
-		
-    	SimpleBitmap enemy_bmp_l;
-    	SimpleBitmap enemy_bmp_r;
-		SimpleBitmap fruit;
-		int dir = 0; //0 is right, 1 is left;
-		void moving(SimpleBitmap bmp);
-		int check_room(SimpleBitmap bmp);
-};
-
-int Enemy::check_room(SimpleBitmap bmp){
-	SimpleBitmap loc_l, loc_r, loc_u, loc_d;
-	
-	loc_l = bmp.CutOut(int(x), int(y)+16, 1, 1);;
-	loc_r = bmp.CutOut(int(x)+32, int(y)+16, 1, 1);
-
-	if(!loc_l.operator==(black_pixel)){//left side wall
-		return 1;
-	}else if(!loc_r.operator==(black_pixel)){//right side wall
-		return 2;
-	}else{
-		return 0; //no wall
-	}
-	
-}
-
-void Enemy::moving(SimpleBitmap bmp){
-	int room = check_room(bmp);
-	if(live != 0){
-		if(dir == 0 && room !=2){
-				x += 0.4;
-			}else if(dir == 1 && room != 1){
-				x -= 0.4;
-			}
-			if(room != 0){
-				dir = 1 - dir;
-				if(dir == 1){
-					x -= 0.4;
-				}else{
-					x += 0.4;
-				}
-			}
-
-	}
-	
-	if(j_cnt > 0){
-		jumped = true;
-		y -= 0.8f;
-		j_cnt -= 1;
-	}
-	if(f_cnt > 0 && j_cnt == 0){
-		jumped = false;
-		y += 0.8f;
-		f_cnt -= 1;
-	}
-
-	if(y+32 >= 480){
-		y = 0;
-	}
-
-	if(y < 20){
-		y = float(20);	
-	}
-
-	SimpleBitmap player_loc = bmp.CutOut(int(x)+16, int(y)+32, 1, 1);
-	if(black_pixel.operator==(player_loc) && (!jumped)){
-		y += 0.8;
-		f_cnt = 0;
-		falling = true;
-	}else{
-		falling = false;
-	}
-}
-
-
-class Player {       
-  public:            
-	float  x, y;
-	bool jumped = false;
-	bool falling = false;
-	int dir = 0; //0 is right, 1 is left;
-	int j_cnt, f_cnt ;     
-
-    SimpleBitmap player_bmp_l;
-    SimpleBitmap player_bmp_r;
-	void moving(SimpleBitmap bmp);
-	int check_room(SimpleBitmap bmp);
-};
-
-int Player::check_room(SimpleBitmap bmp){
-	SimpleBitmap loc_l, loc_r, loc_u, loc_d;
-	
-	loc_l = bmp.CutOut(int(x), int(y)+16, 1, 1);;
-	loc_r = bmp.CutOut(int(x)+32, int(y)+16, 1, 1);
-
-	if(!loc_l.operator==(black_pixel)){
-		return 1;
-	}else if(!loc_r.operator==(black_pixel)){
-		return 2;
-	}else{
-		return 0;
-	}
-	
-}
-
-void Player::moving(SimpleBitmap bmp){
-	if(j_cnt > 0){
-		jumped = true;
-		y -= 1;
-		j_cnt -= 1;
-	}
-	if(f_cnt > 0 && j_cnt == 0){
-		jumped = false;
-		y += 1;
-		f_cnt -= 1;
-	}
-
-	if(y+32 >= 480){
-		y = 0;
-	}
-		
-	if(y < float(20)){
-		y = float(20);	
-	}
-
-	SimpleBitmap loc_d;
-	loc_d = bmp.CutOut(int(x)+16, int(y)+32, 1, 1);;
-
-	if(black_pixel.operator==(loc_d) && (!jumped)){
-		y += 0.8;
-		f_cnt = 0;
-		falling = true;
-	}else{
-		falling = false;
-	}
-
-}
-
 
 bool check_intersect(float e_x, float e_y, float b_x, float b_y){
 	if((b_x + 32 > e_x) && (b_x < e_x + 32) && ((b_y+32 > e_y) && (b_y < e_y+32))){
@@ -329,8 +164,8 @@ int run_single_level(int level, int score, SimpleBitmap bmp){
 		if(FSKEY_UP==key)
 		{
 			if(player.j_cnt == 0 && player.f_cnt == 0 && (!player.falling)){
-				player.j_cnt = 120;
-				player.f_cnt = 120;
+				player.j_cnt = 80;
+				player.f_cnt = 80;
 			}
 		}
 		
@@ -354,11 +189,15 @@ int run_single_level(int level, int score, SimpleBitmap bmp){
 		int type = 0;
 		if(check_collision(&player, &enemies, &type)){
 			if(type == 1){
-				player.x = born_x;
-				player.y = born_y;
-				player.j_cnt = 0;
-				life -= 1;
-				std::cout << "Attacked by enemy! Reborn! Life remaining: " << life << std::endl;
+				if(!player.undefeated){
+					player.x = born_x;
+					player.y = born_y;
+					player.j_cnt = 0;
+					life -= 1;
+					player.undefeated = true;
+					std::cout << "Attacked by enemy! Reborn! Life remaining: " << life << std::endl;
+					std::cout << "Undefeated state begin now!" << std::endl;
+				}
 			}else{
 				score += 100;
 				std::cout << "Score: " << score << std::endl;
@@ -384,7 +223,7 @@ int run_single_level(int level, int score, SimpleBitmap bmp){
 		check_hit(&bubbles, &enemies);
 
 		for(int i =0; i<enemies.size(); i++){
-			enemies.at(i).moving(bmp);
+			enemies.at(i).moving(bmp, player.y, player.jumped || player.falling);
 			glRasterPos2i(int(enemies.at(i).x), int(enemies.at(i).y));
 			if(enemies.at(i).live){
 				if(enemies.at(i).dir == 1){
@@ -412,6 +251,30 @@ int run_single_level(int level, int score, SimpleBitmap bmp){
 
 }
 
+void menu(){
+	SimpleBitmap menu_bmp;
+	menu_bmp.LoadPng("../final_project/png/menu.png");
+	for(;;){
+		FsPollDevice();
+		auto key=FsInkey();
+
+		if(FSKEY_SPACE==key)
+		{
+			break;
+		}
+		if(FSKEY_ESC==key)
+		{
+			exit(0);
+		}
+
+		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+		glRasterPos2i(0, 0);
+		glDrawPixels(menu_bmp.GetWidth(),menu_bmp.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,menu_bmp.GetBitmapPointer());
+		
+		glPixelZoom(1.0,-1.0);
+		FsSwapBuffers();
+	}
+}
 
 void run(){
 	
@@ -423,6 +286,8 @@ void run(){
 
 	
 	FsOpenWindow(0,0,640,480,1);
+	
+	menu();
 
 	int score = 0;
 	

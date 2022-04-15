@@ -314,6 +314,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\67399\24783\HaveAGoodDay\final_project\bubble_bobble\main.cpp" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\bubble_bobble\bubble.h" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\bubble_bobble\enemy.h" />
+    <ClInclude Include="C:\Users\67399\24783\HaveAGoodDay\final_project\bubble_bobble\player.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Users\67399\24783\HaveAGoodDay\build\ZERO_CHECK.vcxproj">

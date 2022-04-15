@@ -35,6 +35,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("C:/Users/67399/24783/HaveAGoodDay/build/bubble_bobble/cmake_install.cmake")
+  include("C:/Users/67399/24783/HaveAGoodDay/build/unit_test/cmake_install.cmake")
   include("C:/Users/67399/24783/HaveAGoodDay/build/simplebitmap/cmake_install.cmake")
   include("C:/Users/67399/24783/HaveAGoodDay/build/public/cmake_install.cmake")
   include("C:/Users/67399/24783/HaveAGoodDay/build/ym2612/cmake_install.cmake")

@@ -1,0 +1,48 @@
+Start testing: Apr 14 20:10 Pacific Daylight Time
+----------------------------------------------------------
+1/3 Testing: player_test
+1/3 Test: player_test
+Command: "C:/Users/67399/24783/HaveAGoodDay/build/unit_test/Release/unit_test1.exe"
+Directory: C:/Users/67399/24783/HaveAGoodDay/build/unit_test
+"player_test" start time: Apr 14 20:10 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.23 sec
+----------------------------------------------------------
+Test Passed.
+"player_test" end time: Apr 14 20:10 Pacific Daylight Time
+"player_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/3 Testing: enemy_test
+2/3 Test: enemy_test
+Command: "C:/Users/67399/24783/HaveAGoodDay/build/unit_test/Release/unit_test2.exe"
+Directory: C:/Users/67399/24783/HaveAGoodDay/build/unit_test
+"enemy_test" start time: Apr 14 20:10 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.09 sec
+----------------------------------------------------------
+Test Passed.
+"enemy_test" end time: Apr 14 20:10 Pacific Daylight Time
+"enemy_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/3 Testing: bubble_test
+3/3 Test: bubble_test
+Command: "C:/Users/67399/24783/HaveAGoodDay/build/unit_test/Release/unit_test3.exe"
+Directory: C:/Users/67399/24783/HaveAGoodDay/build/unit_test
+"bubble_test" start time: Apr 14 20:10 Pacific Daylight Time
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"bubble_test" end time: Apr 14 20:10 Pacific Daylight Time
+"bubble_test" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Apr 14 20:10 Pacific Daylight Time
