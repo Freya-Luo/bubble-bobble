@@ -1,8 +1,7 @@
 #include "simplebitmap.h"
 
-SimpleBitmap temp;
-SimpleBitmap black_pixel;
 
+SimpleBitmap temp;
 
 class Enemy{
 	public:
@@ -12,13 +11,52 @@ class Enemy{
 		bool falling = false;
 		int j_cnt, f_cnt;  
 		
-    	SimpleBitmap enemy_bmp_l;
-    	SimpleBitmap enemy_bmp_r;
+
+    	SimpleBitmap enemy_bmp_l1;
+    	SimpleBitmap enemy_bmp_l2;
+    	SimpleBitmap enemy_bmp_r1;
+    	SimpleBitmap enemy_bmp_r2;
 		SimpleBitmap fruit;
+		int walk_state = 0;
+
 		int dir = 0; //0 is right, 1 is left;
+		int pre_state = 0;
+		Enemy(float born_x, float born_y) {
+			x = born_x;
+			y = born_y;
+			enemy_bmp_l1.LoadPng("../final_project/png/mob_walking_left.png");
+			enemy_bmp_l2.LoadPng("../final_project/png/mob_walking_left2.png");
+			enemy_bmp_r1.LoadPng("../final_project/png/mob_walking_right.png");
+			enemy_bmp_r2.LoadPng("../final_project/png/mob_walking_right2.png");
+			fruit.LoadPng("../final_project/png/banana.png");
+		}
 		void moving(SimpleBitmap bmp, float player_y, bool player_moving);
 		int check_room(SimpleBitmap bmp);
+		SimpleBitmap Enemy::enemy_bmp(void);
+
 };
+
+ 
+SimpleBitmap Enemy::enemy_bmp(void) {
+	if(!live) {
+		return fruit;
+	}
+
+	if (dir == 0) {
+		if (walk_state < 15) {
+			return enemy_bmp_r1;
+		} else {
+			return enemy_bmp_r2;
+		} 
+	} else {
+		if (walk_state < 15) {
+			return enemy_bmp_l1;
+		} else {
+			return enemy_bmp_l2;
+		} 
+	}
+}
+
 
 int Enemy::check_room(SimpleBitmap bmp){
 	SimpleBitmap loc_l, loc_r, loc_u, loc_d;
@@ -49,15 +87,20 @@ void Enemy::moving(SimpleBitmap bmp, float player_y, bool player_moving){
 		}
 		if(dir == 0 && room !=2){
 				x += 0.5f;
+				walk_state = (walk_state + 1) % 31;
+
 		}else if(dir == 1 && room != 1){
 				x -= 0.5f;
+				walk_state = (walk_state + 1) % 31;
 		}
 		if(room != 0 && j_cnt == 0){
 			dir = 1 - dir;
 			if(dir == 1){
 				x -= 0.5f;
+				walk_state = 0;
 			}else{
 				x += 0.5f;
+				walk_state = 0;
 			}
 		}
 	}

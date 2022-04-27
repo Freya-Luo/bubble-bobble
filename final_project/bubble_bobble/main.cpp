@@ -4,7 +4,10 @@
 #include <vector>
 #include "bubble.h"
 #include "enemy.h"
+#include <algorithm>    // std::min
 #include "player.h"
+#include "mmlplayer.h"
+#include "yssimplesound.h"
 
 SimpleBitmap bubble_bmp;
 
@@ -12,6 +15,11 @@ float born_x = 100;
 float born_y = 400;
 
 int life = 3;
+
+YsSoundPlayer mmlplayer;
+YsSoundPlayer::SoundData nextWave;
+YsSoundPlayer::Stream waveStream;
+MMLSegmentPlayer mml;
 
 bool check_intersect(float e_x, float e_y, float b_x, float b_y){
 	if((b_x + 32 > e_x) && (b_x < e_x + 32) && ((b_y+32 > e_y) && (b_y < e_y+32))){
@@ -77,44 +85,44 @@ void assign_monster_loc(int level, std::vector<Bubble> *bubbles, std::vector<Ene
 	int en_cnt = 3;
 	if(level == 1){
 		for (int i =0; i<en_cnt; i++){
-			Enemy en;
+			Enemy en(300, i*150 + 100);
 			en.j_cnt = 0;
 			en.f_cnt = 0;
 			en.dir = rand()%2;
 			en.live = true;
-			en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
-			en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
-			en.fruit.LoadPng("../final_project/png/banana.png");
-			en.x = 300;
-			en.y = i*150 + 100;
+			// en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
+			// en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
+			// en.fruit.LoadPng("../final_project/png/banana.png");
+			// en.x = 300;
+			// en.y = i*150 + 100;
 			enemies->push_back(en);
 		}
 	}else if(level == 2){
 		for (int i =0; i<en_cnt; i++){
-			Enemy en;
+			Enemy en(400, i*150 + 100);
 			en.j_cnt = 0;
 			en.f_cnt = 0;
 			en.dir = rand()%2;
 			en.live = true;
-			en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
-			en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
-			en.fruit.LoadPng("../final_project/png/banana.png");
-			en.x = 400;
-			en.y = i*150 + 100;
+			// en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
+			// en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
+			// en.fruit.LoadPng("../final_project/png/banana.png");
+			// en.x = 400;
+			// en.y = i*150 + 100;
 			enemies->push_back(en);
 		}
 	}else{
 		for (int i =0; i<en_cnt; i++){
-			Enemy en;
+			Enemy en(200, i*150 + 100);
 			en.j_cnt = 0;
 			en.f_cnt = 0;
 			en.dir = rand()%2;
 			en.live = true;
-			en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
-			en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
-			en.fruit.LoadPng("../final_project/png/banana.png");
-			en.x = 200;
-			en.y = i*150 + 100;
+			// en.enemy_bmp_l.LoadPng("../final_project/png/mob_walking_left.png");
+			// en.enemy_bmp_r.LoadPng("../final_project/png/mob_walking_right.png");
+			// en.fruit.LoadPng("../final_project/png/banana.png");
+			// en.x = 200;
+			// en.y = i*150 + 100;
 			enemies->push_back(en);
 		}
 	}
@@ -123,18 +131,15 @@ void assign_monster_loc(int level, std::vector<Bubble> *bubbles, std::vector<Ene
 	
 
 int run_single_level(int level, int score, SimpleBitmap bmp){
-	Player player;
-	
+
+	Player player(born_x, born_y);
+
 	std::vector<Bubble> bubbles;
 	std::vector<Enemy> enemies;
 	bubble_bmp.LoadPng("../final_project/png/Bubble_ammo.png");
 
 	assign_monster_loc(level, &bubbles, &enemies);
 
-	player.x = born_x;
-	player.y = born_y;
-	player.player_bmp_r.LoadPng("../final_project/png/Bubble.png");
-	player.player_bmp_l.LoadPng("../final_project/png/Bubble_left.png");
 	player.j_cnt = 0;
 	player.f_cnt = 0;
 
@@ -144,6 +149,23 @@ int run_single_level(int level, int score, SimpleBitmap bmp){
 		FsPollDevice();
 		auto key=FsInkey();
 		
+		mmlplayer.KeepPlaying();  
+		if(mmlplayer.StreamPlayerReadyToAcceptNextSegment(waveStream,nextWave))
+		{
+			mmlplayer.AddNextStreamingSegment(waveStream,nextWave);
+			auto rawWave=mml.GenerateWave(100);
+			nextWave.CreateFromSigned16bitStereo(YM2612::WAVE_SAMPLING_RATE,rawWave);
+
+			if(0!=mml.GetLastErrorCode())
+			{
+				for(auto msg : mml.GetLastError().Format())
+				{
+					std::cout << msg << std::endl;
+				}
+			}
+		}
+
+
 		if(FSKEY_ESC==key){
 			exit(0);
 		}
@@ -151,13 +173,11 @@ int run_single_level(int level, int score, SimpleBitmap bmp){
 
 		if(FSKEY_LEFT==key){
 			if(player.check_room(bmp) != 1){
-				player.x -= 10;
-				player.dir = 1;
+				player.move(1);
 			}
 		}else if(FSKEY_RIGHT==key){
 			if(player.check_room(bmp) != 2){
-				player.dir = 0;
-				player.x += 10;
+				player.move(0);
 			}
 		}
 
@@ -173,13 +193,14 @@ int run_single_level(int level, int score, SimpleBitmap bmp){
 		{
 			Bubble bubble;
 			if(player.dir == 0){
-				bubble.x = player.x + bubble_bmp.GetWidth();
+				bubble.x = std::min(int(player.x + bubble_bmp.GetWidth()), int(640-2*bubble_bmp.GetWidth()));
 				bubble.y = player.y;
 			}else{
-				bubble.x = player.x - bubble_bmp.GetWidth();
+				bubble.x = std::max(int(player.x - bubble_bmp.GetWidth()), int(bubble_bmp.GetWidth()));;
 				bubble.y = player.y;
 			}
 			bubble.dir = player.dir;
+			bubble.dash_cnt = get_dash_cnt(bmp, bubble);
 			bubbles.push_back(bubble);
 		}
 
@@ -210,34 +231,30 @@ int run_single_level(int level, int score, SimpleBitmap bmp){
 
 		glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
 		glRasterPos2i(0, 0);
+		glEnable(GL_BLEND);
+        glBlendFunc(GL_SRC_ALPHA,GL_ONE_MINUS_SRC_ALPHA);
 		glDrawPixels(bmp.GetWidth(),bmp.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,bmp.GetBitmapPointer());
 		
 		
 		glRasterPos2i(int(player.x), int(player.y));
-		if(player.dir == 1){
-			glDrawPixels(player.player_bmp_l.GetWidth(),player.player_bmp_l.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,player.player_bmp_l.GetBitmapPointer());
-		}else{
-			glDrawPixels(player.player_bmp_r.GetWidth(),player.player_bmp_r.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,player.player_bmp_r.GetBitmapPointer());
-		}
+		SimpleBitmap player_bmp = player.player_bmp();
+		glDrawPixels(player_bmp.GetWidth(),player_bmp.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,player_bmp.GetBitmapPointer());
 
 		check_hit(&bubbles, &enemies);
 
 		for(int i =0; i<enemies.size(); i++){
 			enemies.at(i).moving(bmp, player.y, player.jumped || player.falling);
 			glRasterPos2i(int(enemies.at(i).x), int(enemies.at(i).y));
-			if(enemies.at(i).live){
-				if(enemies.at(i).dir == 1){
-					glDrawPixels(enemies.at(i).enemy_bmp_l.GetWidth(),enemies.at(i).enemy_bmp_l.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,enemies.at(i).enemy_bmp_l.GetBitmapPointer());
-				}else{
-					glDrawPixels(enemies.at(i).enemy_bmp_r.GetWidth(),enemies.at(i).enemy_bmp_r.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,enemies.at(i).enemy_bmp_r.GetBitmapPointer());		
-				}
-			}else{
-					glDrawPixels(enemies.at(i).fruit.GetWidth(),enemies.at(i).fruit.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,enemies.at(i).fruit.GetBitmapPointer());
-			}
+			SimpleBitmap enemy_bmp = enemies.at(i).enemy_bmp();
+			glDrawPixels(enemy_bmp.GetWidth(),enemy_bmp.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,enemy_bmp.GetBitmapPointer());
 		}
 
 		for(int i = 0; i<bubbles.size(); i++){
 			bubbles.at(i).moving();
+			if(bubbles.at(i).y <= 0){
+				bubbles.erase(bubbles.begin() + i);
+				continue;
+			}
 			glRasterPos2i(int(bubbles.at(i).x), int(bubbles.at(i).y));
 			glDrawPixels(bubble_bmp.GetWidth(),bubble_bmp.GetHeight(),GL_RGBA,GL_UNSIGNED_BYTE,bubble_bmp.GetBitmapPointer());
 		}
@@ -283,6 +300,28 @@ void run(){
 
     SimpleBitmap bmp;
 	int level;
+
+	mmlplayer.Start();
+	mmlplayer.StartStreaming(waveStream);
+	mml.AddSegment(
+		"T180O4L4",
+		"T180O4L4",
+		"T180O4L4"
+	);
+	for (int i = 0; i < 100; i++){
+		mml.AddSegment(
+		"@2T90L12V12",
+		"@2T90L2S0M6000",
+		"@2T90L4V12"
+		);
+
+		mml.AddSegment(
+		"O3G+O4C+EO3G+O4C+EO3G+O4C+EO3G+O4C+E",
+		"O3C+1",
+		"O2C+1"
+	);
+	}
+
 
 	
 	FsOpenWindow(0,0,640,480,1);

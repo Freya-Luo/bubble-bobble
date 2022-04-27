@@ -10,12 +10,82 @@ class Player {
 	int j_cnt, f_cnt ;     
 	bool undefeated = false;
 	int undefeat_cnt = 0;
-
-    SimpleBitmap player_bmp_l;
-    SimpleBitmap player_bmp_r;
+	int walk_state = 0;
+	int state = 0;
+	SimpleBitmap player_bmp_l1;
+	SimpleBitmap player_bmp_l2;
+	SimpleBitmap player_bmp_l3;
+	SimpleBitmap player_bmp_r1;
+	SimpleBitmap player_bmp_r2;
+	SimpleBitmap player_bmp_r3;
+  // Player(float born_x, float born_y); // constructor
+	Player(float born_x, float born_y) {
+			x = born_x;
+			y = born_y;
+			player_bmp_r1.LoadPng("../final_project/png/Bubble_walk2.png");
+			player_bmp_r2.LoadPng("../final_project/png/Bubble_walk1.png");
+			player_bmp_l1.LoadPng("../final_project/png/Bubble_left.png");
+			player_bmp_l2.LoadPng("../final_project/png/Bubble_walk3.png");
+		}
+	
+  void move(int action);
+  SimpleBitmap player_bmp(void);	
 	void moving(SimpleBitmap bmp);
 	int check_room(SimpleBitmap bmp);
 };
+
+
+void Player::move(int action) {
+	// 0: move right, 1: move left, 2: jump, 3: falling
+	if (action == 0) {
+		// move right
+		if (state == 0) {
+			// same direction
+			walk_state = (walk_state + 1) % 2;
+			x += 10;
+			dir = 0;
+			state = action;
+		} else {
+			// different direction
+			walk_state = 0;
+			x += 10;
+			dir = 0;
+			state = action;
+		}
+	} else if (action == 1) {
+		// move left
+		if (state == 0) {
+			// different direction
+			walk_state = 0;
+			x -= 10;
+			dir = 1;
+			state = action;
+		} else {
+			// same direction
+			walk_state = (walk_state + 1) % 3;
+			x -= 10;
+			dir = 1;
+			state = action;
+		}
+	}
+}
+
+SimpleBitmap Player::player_bmp(void) {
+	if (state == 0) {
+		if (walk_state == 0) {
+			return player_bmp_r1;
+		} else {
+			return player_bmp_r2;
+		} 
+	} else {
+		if (walk_state == 0) {
+			return player_bmp_l1;
+		} else {
+			return player_bmp_l2;
+		} 
+	}
+}
+
 
 int Player::check_room(SimpleBitmap bmp){
 	SimpleBitmap loc_l, loc_r, loc_u, loc_d;
